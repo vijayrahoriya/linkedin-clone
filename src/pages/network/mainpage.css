@@ -1,0 +1,117 @@
+.mainpage{
+    flex: .7;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.mainpage .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: 10px;
+    color: #333;
+}
+
+.mainpage .top span:last-child{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.mainpage .top span:last-child:hover{
+    background: rgb(231, 231, 231);
+}
+
+.mainpage .peoples {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.mainpage .peoples .top{
+    box-shadow: none;
+}
+
+.mainpage .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.mainpage .row .box{
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin:0 10px 20px;
+}
+
+.mainpage .row .box header{
+    background: url('https://images.unsplash.com/flagged/photo-1573740144655-bbb6e88fb18a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60') no-repeat 0 0;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.mainpage .row .box:hover{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.2);
+}
+
+.mainpage .row img{
+    width: 60px;height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.mainpage .row .name{
+    margin-top: 50px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.mainpage .row span{
+    color: #888;
+    font-size: .9rem;
+    padding: 0 10px;
+}
+
+.mainpage .row .followers{
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.mainpage .but{
+    display: flex;
+    justify-content: center;
+}
+
+.mainpage .row button{
+    padding: 8px;
+    border: 2px solid rgb(38, 151, 195);
+    width: 90%;
+    border-radius: 50px;
+    cursor: pointer;
+    background: none;
+    margin: 8px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color:rgb(38, 151, 195);
+    align-self: center;
+    display: block;
+}
+
+.mainpage .row button:hover{
+    background: skyblue;
+}

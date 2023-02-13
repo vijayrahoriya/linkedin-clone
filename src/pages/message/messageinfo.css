@@ -1,0 +1,60 @@
+.messageinfo .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.messageinfo{
+    background: #fff;
+    border-radius: 10px;
+    flex: .65;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.messageinfo hr{
+    margin: 10px 0;
+}
+
+.messageinfo .top span:last-child{
+    cursor: pointer;
+}
+
+.messageinfo .field{
+    display: flex;
+    align-items: center;
+    background: rgb(186, 235, 255);
+    border-radius: 5px;
+    padding:5px;
+    margin:0 10px;
+    justify-content: space-between;
+}
+
+.iconCursor{
+    cursor: pointer;
+}
+
+.messageinfo .field input{
+    border: none;
+    outline: none;
+    flex: 1;
+
+}
+
+.messageinfo h4{
+    padding: 10px;
+}
+
+.messageinfo textarea{
+    flex: 1;
+    border: none;
+    background: none;
+    resize: none;
+    width: 97%;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Poppins',sans-serif;
+    height: 50vh;
+}

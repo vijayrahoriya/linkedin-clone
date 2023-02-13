@@ -1,0 +1,74 @@
+.recommended{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.recommended h4{
+    font-weight: 500;
+    padding: 0 15px;
+    font-size: 1.6rem;
+    padding-top: 20px;
+}
+
+
+.recommended hr{
+    margin: 10px 0;
+}
+
+.recommended .info{
+    color: #777;
+    padding-bottom: 10px;
+    padding: 0 15px;
+}
+
+.recommended .line{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 15px;
+    margin-top: 10px;
+}
+
+.recommended .left{
+    display: flex;
+    gap: 10px;
+}
+
+.recommended .left img{
+    width: 50px;
+    height: 60px;
+}
+
+.recommended .left .content{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.recommended .left h5{
+    color: rgb(22, 136, 181);
+}
+
+.recommended .left h5:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.recommended .country{
+    color: #888;
+    font-size: .9rem;
+}
+
+.recommended .time{
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.recommended .time span{
+    color: green;
+    font-weight: 500;
+    font-size: .9rem;
+}

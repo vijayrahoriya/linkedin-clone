@@ -1,0 +1,389 @@
+.mainProfile{
+    flex: .65;
+}
+
+.mainProfile .top,.highlight,.about,.activity,.education,.skills,.intrests{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    margin-bottom: 10px;
+}
+
+.mainProfile header{
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(233, 228, 228);
+    position: relative;
+}
+
+.mainProfile header::before{
+    content: "";
+    height: 100%;
+    width: 60%;
+    /* background: rgb(193, 191, 191); */
+    background-image: radial-gradient();
+    border-radius: 10px 30px 30px 0;
+    position: absolute;
+}
+.mainProfile header::after{
+    content: "";
+    height: 100%;
+    width: 30%;
+    border-radius: 0 10px 0 0;
+    background: rgb(190, 215, 225);
+    position: absolute;
+    right: 0;
+}
+
+.mainProfile header img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    left: 4%;
+}
+
+.mainProfile .info{
+    margin-top: 60px;
+    padding:0  30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainProfile .info .left{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.mainProfile .info h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.mainProfile .info span:first-child{
+    font-size: 1em;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.mainProfile .info span:last-child{
+    font-size: .8rem;
+    color: #666;
+}
+
+.mainProfile .info .right{
+    font-weight: 500;
+}
+
+.mainProfile .info span span{
+    cursor: pointer;
+    color: rgb(32, 132, 172) !important;
+    font-weight: 500 !important;
+    font-size: 1.1rem !important;
+}
+
+.mainProfile .info span span:hover{
+    text-decoration: underline;
+}
+
+.mainProfile .buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    height: 90px;
+}
+
+.mainProfile .buttons button{
+    padding:5px 10px;
+    border-radius: 30px;
+    border: 1.8px solid gray;
+    color:gray;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: none;
+    outline: none;
+}
+
+.mainProfile .buttons button:hover{
+    border-color: #444;
+    background: lightgray;
+}
+
+.mainProfile .buttons button.active{
+    border-color: rgb(32, 132, 172);
+    color: rgb(32, 132, 172);
+}
+
+.mainProfile .icon{
+    height: 15px !important;
+    width: 15px !important;
+}
+
+.highlight,.about,.activity,.education,.skills,.intrests{
+    padding: 20px;
+}
+
+.activity, .skills{
+    padding-bottom: 0;
+}
+
+.highlight .line,
+.education .line{
+    display: flex;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.highlight img,
+.education img,
+.intrests img{
+    width: 50px;
+}
+
+.highlight .content,
+.education .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight p,
+.activity p,
+.education p,
+.skills p{
+    font-weight: 500;
+}
+
+.highlight h3,
+.about h3,
+.activity h3,
+.education h3,
+.skills h3,
+.intrests h3{
+    font-weight: 500;
+}
+
+.highlight span,
+.about span,.activity span,
+.education span{
+    font-size: .8rem;
+    color: #333;
+}
+
+.highlight button{
+    padding:5px 10px;
+    border-radius: 30px;
+    border: 1.8px solid gray;
+    color:gray;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: none;
+    outline: none;
+    margin: 5px 0;
+}
+
+.highlight button:hover{
+    border-color: #444;
+}
+
+.mainProfile .activity p{
+    margin-top: 20px;
+}
+
+.mainProfile .show{
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    color: #555;
+}
+
+.mainProfile .show:hover{
+    background: lightgray;
+}
+
+.skills h3{
+    margin-bottom: 20px;
+}
+
+.mainProfile  hr{
+    margin-top: 10px;
+    background: lightgray;
+}
+
+.skills p{
+    color: #444;
+}
+
+.skills p:hover{
+    color:rgb(32, 132, 172);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.mainProfile .skills hr{
+    margin: 15px 0;
+}
+
+.mainProfile .skills hr.last{
+    margin-bottom: 0;
+}
+
+.intrests ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    color: #999;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.intrests li{
+    position: relative;
+    padding: 8px 0;
+}
+
+.intrests li.active::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: green;
+    bottom: 0;
+}
+
+.intrests li.active{
+    color: green;
+}
+
+.intrests hr{
+    margin: 0;
+}
+
+.intrests .line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.intrests .line .left{
+    display: flex;
+    gap:10px;
+}
+
+.intrests .line .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.intrests  p{
+    font-weight: 500;
+}
+
+.intrests  span{
+    font-size: .9rem;
+    color: #888;
+}
+
+.intrests  button{
+    padding:5px 8px;
+    border-radius: 40px;
+    background: none;
+    margin-top: 10px;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid gray;
+    color: gray;
+    font-weight: 550s;
+    gap:5px;
+}
+
+.intrests  button:hover{
+    border-color: #444;
+    background: lightgray;
+}
+
+.intrests .line.hide{
+    display: none;
+}
+
+.schools{
+    margin: 10px 0;
+    display: none;
+}
+
+.schools.active{
+    display: block;
+}
+
+.mainProfile .schools .left{
+    width: 100%;
+}
+
+.mainProfile .footer h3{
+    color:rgb(32, 132, 172);
+    margin-top: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mainProfile .footer .line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainProfile .footer .first{
+    width: 20%;
+}
+
+.mainProfile .footer .first:last-child{
+    width: 30%;
+}
+
+.mainProfile .footer p{
+    font-size: .9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.mainProfile .footer p:hover,
+.mainProfile .question h5:hover{
+    color:rgb(32, 132, 172);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.mainProfile .question{
+    display: flex;
+    gap:5px;
+}
+
+.mainProfile .question h5{
+    color: #444;
+    font-size: 1rem;
+}
+
+.mainProfile .question span{
+    font-size: .8rem;
+    color: #777;
+}

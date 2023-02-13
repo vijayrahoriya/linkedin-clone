@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import Message from './pages/message/Message';
 import './App.css';
+import Header from './components/header/Header';
+import LeftSidebar from './components/leftsidebar/LeftSidebar';
+import Posts from './components/posts/Posts';
+import RightSidebar from './components/rightbar/RightSidebar';
+import Jobs from './pages/jobs/Jobs';
+import Network from './pages/network/Network';
+import Notification from './pages/notification/Notification';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Profile from './pages/profile/Profile';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Profile/>}/>
+          <Route path='/home' element={
+            <div className='main-field container'>
+              <LeftSidebar />
+              <Posts />
+              <RightSidebar />
+            </div>
+          } />
+          <Route path='/network' element={<Network/>}/>
+          <Route path='/jobs' element={<Jobs/>}/>
+          <Route path='/message' element={<Message/>}/>
+          <Route path='/notification' element={<Notification/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

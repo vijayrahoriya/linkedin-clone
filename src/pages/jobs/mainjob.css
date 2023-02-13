@@ -1,0 +1,70 @@
+.recent-jobs{
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.mainjobs{
+    flex: .5;
+}
+
+.mainjobs .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.mainjobs .top span:last-child{
+    padding: 10px;
+    font-size: .8rem;
+    color: #888;
+    border-radius: 5px;
+}
+
+.mainjobs .top span:last-child:hover{
+    background: rgb(234, 233, 233);
+    cursor: pointer;
+}
+
+.mainjobs .job-info p{
+    font-size: .9rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.mainjobs .job-info p span{
+    color: green;
+}
+
+.mainjobs .job-info .address{
+    color: #888;
+    font-size: .8rem;
+}
+
+.mainjobs hr{
+    margin: 10px 0;
+}
+
+.mainjobs button{
+    background: none;
+    display: flex;
+    align-items: center;
+    color: rgb(33, 155, 203);
+    font-weight: 600;
+    padding:5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+}
+
+.mainjobs button:hover{
+    cursor: pointer;
+    background:rgb(240, 239, 239);
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+}

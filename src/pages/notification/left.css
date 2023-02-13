@@ -1,0 +1,29 @@
+.leftBox{
+    flex: .25;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 10px;
+    border-radius: 10px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 80px;
+}
+
+.leftBox span{
+    font-weight: 500;
+}
+
+.leftBox p{
+    color: rgb(37, 145, 188);
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.leftBox p:hover{
+    text-decoration: underline;
+}
+

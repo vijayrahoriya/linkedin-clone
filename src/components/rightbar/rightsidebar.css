@@ -1,0 +1,161 @@
+.rightsidebar{
+    flex: .35;
+}
+
+:root{
+    --bg: rgb(238, 234, 234);
+}
+
+.rightsidebar .data{
+    position: sticky;
+    top: 70px;
+}
+
+.rightsidebar .top,.ad-box{
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.rightsidebar header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+    font-weight: 500;
+}
+
+.rightsidebar ul{
+    margin: 0;
+    padding: 0;
+}
+
+.rightsidebar li{
+    padding:0 15px;
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 10px;
+    gap:10px;
+}
+
+.rightsidebar .circle{
+    font-size: .7rem;
+    font-weight: 900;
+}
+
+.rightsidebar li:hover{
+    cursor: pointer;
+    background: var(--bg);
+}
+
+.rightsidebar li p{
+    font-weight: 500;
+}
+
+.rightsidebar li span{
+    color: #888;
+    font-size: .8rem;
+}
+
+.rightsidebar .show{
+    display: flex;
+    align-content: center;
+    margin: 10px 10px;
+    padding: 4px;
+    color: #888;
+    width: max-content;
+}
+
+.rightsidebar .show:hover{
+    background: var(--bg);
+    cursor: pointer;
+}
+
+.ad{
+    padding: 10px;
+    font-size: .8rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.ad-box{
+    text-align: center;
+}
+
+.ad-box .content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.rightsidebar .content img{
+    width: 60px;height: 60px;
+    border-radius: 50%;
+}
+
+.rightsidebar .content .key{
+    color:rgb(20, 138, 184);
+}
+
+.rightsidebar .ad-box span{
+    color: #888;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.rightsidebar .ad-box p{
+    color: #999;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.rightsidebar .ad-box button{
+    background: none;
+    border: 1px solid rgb(20, 138, 184);
+    border-radius: 50px;
+    padding: 5px 10px;
+    align-self: center;
+    color:rgb(20, 138, 184);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.rightsidebar .footer{
+    padding: 10px 40px;
+    color: #888;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.rightsidebar .footer span{
+    margin: 0 10px;
+}
+
+.rightsidebar .footer span:hover{
+    color:rgb(20, 138, 184);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.rightsidebar .footer p span{
+    display: flex;
+    align-items: center;
+}
+
+.rightsidebar .footer p{
+    display: flex;
+    align-items: center;
+}
+
+.rightsidebar .footer p span{
+    color: rgb(20, 138, 184);
+    font-weight: 500;
+}

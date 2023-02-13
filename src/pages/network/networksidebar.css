@@ -1,0 +1,33 @@
+.networksidebar{
+    flex: .3;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    position: sticky;
+    top: 80px;
+    height: max-content;
+}
+
+.networksidebar h4{
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+.networksidebar .line{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    color: #999;
+}
+
+.networksidebar .line:hover{
+    background: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+.networksidebar .icon{
+    color: #666;
+}

@@ -1,0 +1,192 @@
+.leftsidebar{
+    flex: .25;
+}
+
+:root{
+    --bg: rgb(238, 234, 234);
+}
+
+.leftsidebar-info{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.leftsidebar header{
+    background: url('https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60') no-repeat 0 0;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-position: top;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.leftsidebar img{
+    position: absolute;
+    height: 80px;width: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.leftsidebar .name{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.leftsidebar .name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.leftsidebar .info{
+    color: #555;
+    text-align: center;
+    font-size: .8rem;
+    display: block;
+    padding:5px;
+}
+
+.leftsidebar hr{
+    margin: 10px 0;
+    background: rgb(234, 232, 232);
+    color: rgb(234, 232, 232);
+    width: 100%;
+    height: 1px;
+}
+
+.leftsidebar .connection{
+    display: flex;
+    padding:10px;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+
+.leftsidebar .connection:hover{
+    background: var(--bg);
+    cursor: pointer;
+}
+
+.connection span{
+    color: #777;
+}
+
+.connection .right span{
+    color: skyblue;
+}
+
+.leftsidebar .tools{
+    padding: 10px;
+    font-size: .8rem;
+}
+
+.leftsidebar .tools:hover{
+    background: var(--bg);
+    cursor: pointer;
+}
+
+.leftsidebar .tools span:first-child{
+    color: #777;
+}
+
+.leftsidebar .tools span:last-child{
+    text-decoration: underline;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.leftsidebar .tools span:last-child div{
+    height: 15px;width: 15px;
+    border-radius: 1px;
+    background: linear-gradient(235deg,orange 50%,rgb(234, 121, 80) 50%);
+}
+
+.leftsidebar .items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .8rem;
+    color:#333;
+    padding: 10px;
+}
+
+.leftsidebar .items:hover{
+    background: var(--bg);
+    cursor: pointer;
+}
+
+.leftsidebar .bottom{
+    background: #fff;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    position: sticky;
+    top: 70px;
+}
+
+.leftsidebar .bottom p{
+    padding:5px 10px;
+    color: rgb(21, 125, 167);
+}
+
+.leftsidebar .bottom p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.leftsidebar .bottom p:nth-child(2):hover{
+    text-decoration: none;
+}
+
+.leftsidebar .bottom p:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftsidebar .bottom p:nth-child(2) span{
+    height: 30px;width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.1rem;
+    color: #888;
+    font-weight: 500;
+}
+
+.leftsidebar .bottom p:nth-child(2) span:hover{
+    background: var(--bg);
+    color: #000;
+}
+
+.leftsidebar button{
+    background: none;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    outline: none;
+    color: #888;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bottom hr{
+    margin-top: 10px;
+}
+
+.leftsidebar button:hover{
+    background: var(--bg);
+}
+

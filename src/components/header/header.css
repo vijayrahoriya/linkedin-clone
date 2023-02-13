@@ -1,0 +1,211 @@
+.container{
+    padding: 0 150px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+body{
+    background: #f6f6f6;
+}
+
+.profile-box{
+    position: absolute;
+    background: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 10px;
+    top: 70px;
+    right: 30%;
+    transition: all .3s;
+    opacity: 0;
+}
+
+.profile-box.active{
+    opacity: 1;
+}
+
+.profile-box h4{
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.profile-box .line{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #888;
+}
+
+.profile-box .line div{
+    height: 20px;width: 20px;
+    background: linear-gradient(235deg,orange 50%,rgb(225, 155, 26) 50%);
+}
+
+.profile-box .line span:hover{
+    color: rgb(52, 162, 206);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile-box button{
+    border: 2px solid rgb(52, 162, 206);
+    border-radius: 50px;
+    padding: 5px;
+    width: 100%;
+    margin: 8px 0;
+    background: none;
+    color:rgb(52, 162, 206);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.profile-box .top{
+    display: flex;
+    gap: 10px;
+}
+
+
+.profile-box .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-box .bio{
+    font-size: .8rem;
+    color: #333;
+}
+
+.profile-box .name{
+    font-weight: 500;
+}
+
+.profile-box img{
+    width: 50px;height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.header{
+    background: #fff;
+    display: flex;
+    position: sticky;
+    top:0;
+    height: 60px;
+    align-items: center !important;
+    z-index: 111;
+}
+
+.header-search{
+    display: flex;
+    align-items: center !important;
+    gap: 5px;
+    flex: .4;
+}
+
+.header-links{
+    flex: .6;
+}
+
+.linkedinIcon{
+    color: blue;
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.field{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 0 10px;
+    flex: .7;
+    background: rgb(231, 238, 241);
+    border-radius: 3px;
+}
+
+.field input{
+    border: none;
+    outline: none;
+    height: 100%;
+    font-weight: 400;
+    background: none;
+}
+
+.field input::placeholder{
+    color: #333;
+}
+
+.field .searchIcon{
+    width: 20px !important;
+    height: 20px !important;
+    color: #333;
+}
+
+.header-links ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+.header-links li a{
+    text-align: center;
+    cursor: pointer;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.header-links li:hover a{
+    color: #000;
+}
+
+.header-links li.active a{
+    color: #000;
+}
+
+.header-links li.active a::before{
+    position: absolute;
+    content: "";
+    height: 1.5px;
+    width: 80px;
+    border-radius: 5px;
+    background: #000;
+    bottom: -10px;
+}
+
+.header-links li span{
+    font-size: .6rem;
+}
+
+.header-links li.dropdown span{
+    display: flex;
+    align-items: center;
+}
+
+.lists p{
+    font-size: .9rem;
+    color: #333;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.lists p:hover{
+    text-decoration: underline;
+}
+
+.lists h2{
+    font-size: 1rem;
+}

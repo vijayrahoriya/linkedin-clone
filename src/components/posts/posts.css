@@ -1,0 +1,87 @@
+.posts{
+    flex: .6;
+}
+
+.posts :root{
+    --bg: rgb(208, 225, 233);
+}
+
+.posts .start-post{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+.start-post header{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.start-post input{
+    flex: 1;
+    border: 1px solid var(--bg);
+    border-radius: 50px;
+    height: 50px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color:#333;
+}
+
+.start-post input:hover{
+    background: var(--bg);
+}
+
+.start-post img{
+    width: 50px;height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.posts .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.posts .choose{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #888;
+    padding: 10px;
+}
+
+.posts .choose:hover{
+    background: var(--bg);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.posts .line{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.posts .line .hori{
+    flex: 1;
+    height: 1px;
+}
+
+.posts .line .text{
+    color: #888;
+    display: flex;
+    font-weight: 400;
+}
+
+.posts .line .text strong{
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    align-items: center;
+}

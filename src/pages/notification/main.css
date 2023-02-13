@@ -1,0 +1,57 @@
+.mainBox{
+    flex: .6;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.mainBox .box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mainBox .left{
+    display: flex;
+    gap:8px;
+    flex: .9;
+}
+
+.mainBox img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.mainBox .content span{
+    font-weight: 500;
+}
+
+.mainBox button{
+    font-size: 1rem;
+    font-weight: 500;
+    background: none;
+    color: rgb(22, 137, 183);
+    border: 2px solid rgb(22, 137, 183);
+    border-radius: 50px;
+    color: rgb(22, 137, 183);
+    padding: 8px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.mainBox button:hover{
+    background: skyblue;
+}
+
+.mainBox .right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.mainBox .right span{
+    font-size: .8rem;
+}
