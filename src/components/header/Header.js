@@ -43,7 +43,7 @@ function Header() {
       </div>
       <div className="header-links">
         <ul>
-          <li className={location.pathname === '/home' ? `active` : ''}><Link to={"/home"}>
+          <li className={location.pathname === '/' ? `active` : ''}><Link to={"/"}>
             <HomeIcon />
             <span>Home</span></Link>
           </li>
@@ -89,7 +89,7 @@ function Header() {
         </ul>
         <div className={`profile-box ${profile ? 'active' : ''}`}></div>
         <div className={`profile-box ${profile ? 'active' : ''}`}>
-          <Link to={'/'}>
+          <Link to={'/profile'}>
             <div className="top" onClick={popupProfile}>
               <div className="image">
                 <img src={userPhoto} alt="" />
@@ -100,7 +100,7 @@ function Header() {
               </div>
             </div>
           </Link>
-          <button onClick={popupProfile}><Link to={'/'} style={{ color: 'skyblue' }}>View Profile</Link></button>
+          <button onClick={popupProfile}><Link to={'/profile'} style={{ color: 'skyblue' }}>View Profile</Link></button>
 
           <hr />
 

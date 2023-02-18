@@ -16,8 +16,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/' element={<Profile/>}/>
-          <Route path='/home' element={
+          <Route path='/profile' element={<Profile/>}/>
+          <Route path='/' element={
             <div className='main-field container'>
               <LeftSidebar />
               <Posts />
