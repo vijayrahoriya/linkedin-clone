@@ -68,3 +68,10 @@
     display: flex;
     justify-content: center;
 }
+
+
+@media(max-width: 950px){
+    .mainjobs{
+        flex: .6;
+    }
+}

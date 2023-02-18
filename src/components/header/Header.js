@@ -9,8 +9,10 @@ import NotificationIcon from '@mui/icons-material/Notifications'
 import AppsIcon from '@mui/icons-material/Apps'
 import UserImage from '@mui/icons-material/AccountCircle'
 import DropdownIcon from '@mui/icons-material/ArrowDropDown'
+import HoriIcon from '@mui/icons-material/MoreHoriz'
 import './header.css'
 import { Link, useLocation } from 'react-router-dom'
+import userPhoto from '../../assests/user.avif'
 
 function Header() {
   let location = useLocation();
@@ -20,9 +22,14 @@ function Header() {
   let path = arr.filter((path) => path !== '')
   path = path.join().slice(0, 1).toLocaleUpperCase() + path.join().slice(1)
   document.title = path + " | Linkedin Clone"
+  const [menuLink, setMenuLinks] = useState(false)
 
   const popupProfile = () => {
     setProfile(!profile)
+  }
+
+  const popupLinks = () => {
+    setMenuLinks(!menuLink)
   }
 
   return (
@@ -36,25 +43,39 @@ function Header() {
       </div>
       <div className="header-links">
         <ul>
-          <li className={location.pathname == '/home' ? `active` : ''}><Link to={"/home"}>
+          <li className={location.pathname === '/home' ? `active` : ''}><Link to={"/home"}>
             <HomeIcon />
             <span>Home</span></Link>
           </li>
-          <li className={location.pathname == '/network' ? `active` : ''}><Link to={"/network"}>
+          <li className={location.pathname === '/network' ? `active` : ''}><Link to={"/network"}>
             <UsersIcon />
             <span>My Network</span></Link>
           </li>
-          <li className={location.pathname == '/jobs' ? `active` : ''}><Link to={"/jobs"}>
+          <li className={location.pathname === '/jobs' ? `active` : ''}><Link to={"/jobs"}>
             <JobIcon />
             <span>Jobs</span></Link>
           </li>
-          <li className={location.pathname == '/message' ? `active` : ''}><Link to={"/message"}>
+          <li className={location.pathname === '/message' ? `active` : ''}><Link to={"/message"}>
             <MessageIcon />
             <span>Messages</span></Link>
           </li>
-          <li className={location.pathname == '/notification' ? `active` : ''}><Link to={"/notification"}>
+          <li className={location.pathname === '/notification' ? `active` : ''}><Link to={"/notification"}>
             <NotificationIcon />
             <span>Notifications</span></Link>
+          </li>
+          <li className="options-list" onClick={popupLinks}>
+            <HoriIcon />
+            <ul className={`profile-box ${menuLink ? 'active' : ''}`}>
+              <li style={{ cursor: 'pointer' }} onClick={popupProfile} className='dropdown'>
+                <UserImage />
+                <span>Me <DropdownIcon /></span>
+              </li>
+              <li className='dropdown'><Link to={"/"}>
+                <AppsIcon />
+                <span>Work <DropdownIcon /></span></Link>
+              </li>
+              <li className='lastLink' style={{ textDecoration: 'underline', color: '#000' }}><Link to={"/"}>Try Premium form<br></br> free</Link></li>
+            </ul>
           </li>
           <li style={{ cursor: 'pointer' }} onClick={popupProfile} className='dropdown'>
             <UserImage />
@@ -64,21 +85,22 @@ function Header() {
             <AppsIcon />
             <span>Work <DropdownIcon /></span></Link>
           </li>
-          <li style={{ textDecoration: 'underline', color: '#000' }}><Link to={"/"}>Try Premium form<br></br> free</Link></li>
+          <li className='lastLink' style={{ textDecoration: 'underline', color: '#000' }}><Link to={"/"}>Try Premium form<br></br> free</Link></li>
         </ul>
+        <div className={`profile-box ${profile ? 'active' : ''}`}></div>
         <div className={`profile-box ${profile ? 'active' : ''}`}>
           <Link to={'/'}>
-          <div className="top" onClick={popupProfile}>
-            <div className="image">
-              <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+            <div className="top" onClick={popupProfile}>
+              <div className="image">
+                <img src={userPhoto} alt="" />
+              </div>
+              <div className="content">
+                <span className="name">Vijay Prajapati</span>
+                <span className="bio">Student of University of Rajasthan, web developer</span>
+              </div>
             </div>
-            <div className="content">
-              <span className="name">Vijay Prajapati</span>
-              <span className="bio">Student of University of Rajasthan, web developer</span>
-            </div>
-          </div>
           </Link>
-          <button onClick={popupProfile}><Link to={'/'} style={{color:'skyblue'}}>View Profile</Link></button>
+          <button onClick={popupProfile}><Link to={'/'} style={{ color: 'skyblue' }}>View Profile</Link></button>
 
           <hr />
 

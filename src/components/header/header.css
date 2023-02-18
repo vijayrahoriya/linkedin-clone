@@ -22,10 +22,12 @@ body{
     right: 30%;
     transition: all .3s;
     opacity: 0;
+    pointer-events: none;
 }
 
 .profile-box.active{
     opacity: 1;
+    pointer-events: auto;
 }
 
 .profile-box h4{
@@ -186,6 +188,11 @@ body{
     bottom: -10px;
 }
 
+.options-list{
+    display: none;
+    cursor: pointer;
+}
+
 .header-links li span{
     font-size: .6rem;
 }
@@ -208,4 +215,78 @@ body{
 
 .lists h2{
     font-size: 1rem;
+}
+
+
+@media(max-width: 1150px){
+    .container{
+        padding: 0 80px;
+    }
+
+    .header.container{
+        padding: 0 20px;
+    }
+    
+    .lastLink{
+        font-size: .8rem;
+    }
+
+    .header-links ul{
+        gap: 20px;
+    }
+}
+
+@media(max-width: 768px){
+    .header .field{
+        display: none;
+    }
+    .header-search{
+        flex:.2;
+    }
+    .header-links{
+        flex: .8;
+    }
+}
+
+@media(max-width: 600px){
+    .header-search{
+        flex: .1;
+        margin-right: 10px;
+    }
+    .header-links{
+        flex: .9;
+    }
+    .header-links ul{
+        justify-content: space-between;
+    }
+    .container{
+        padding:0;
+    }
+}
+
+@media(max-width: 490px){
+    .options-list{
+        display: block;
+    }
+    .header-links li.dropdown,
+    .header-links .lastLink{
+        display: none;
+    }
+
+    .options-list .profile-box.active{
+        opacity: 1;
+        padding: 20px;
+        right: 0;
+    }
+
+    .options-list li.dropdown,
+    .options-list .lastLink{
+        display: block;
+    }
+}
+
+@media(max-width: 400px){
+    .header.container{
+        padding: 0;
+    }
 }

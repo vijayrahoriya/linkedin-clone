@@ -44,17 +44,17 @@ function Post({ friendImage, friendName,userImage,userName,postImage,followers,t
                     <img className='postImage' src={postImage} alt="" />
 
                 <div className="likes-box">
-                    <div className="left"><LikeIcon className='icon'/><HeartIcon className='icon'/>{likes}</div>
+                    <div className="left"><LikeIcon className='icon info-icon'/><HeartIcon className='icon info-icon'/>{likes}</div>
                     <div className="right">{comments} comments * {posts} posts</div>
                 </div>
 
                 <hr/>
 
                 <div className='bottom'>
-                    <div className="box"><LikeIcon/> Like</div>
-                    <div className="box"><CommentIcon/> Comment</div>
-                    <div className="box"><RepostIcon/> Repost</div>
-                    <div className="box"><SendIcon/> Send</div>
+                    <div className="box"><LikeIcon className='info-icon'/> Like</div>
+                    <div className="box"><CommentIcon className='info-icon'/> Comment</div>
+                    <div className="box"><RepostIcon className='info-icon'/> Repost</div>
+                    <div className="box"><SendIcon className='info-icon'/> Send</div>
                 </div>
             </div>
 

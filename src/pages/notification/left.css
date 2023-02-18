@@ -11,6 +11,13 @@
     top: 80px;
 }
 
+
+@media(max-width: 950px){
+   .leftBox{
+    flex: .3;
+   }
+}
+
 .leftBox span{
     font-weight: 500;
 }

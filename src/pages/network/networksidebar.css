@@ -31,3 +31,10 @@
 .networksidebar .icon{
     color: #666;
 }
+
+
+@media(max-width: 950px){
+    .networksidebar{
+        flex: .4;
+    }
+}

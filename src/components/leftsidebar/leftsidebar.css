@@ -2,6 +2,13 @@
     flex: .25;
 }
 
+
+@media(max-width: 950px){
+    .leftsidebar{
+        flex: .3;
+    }
+}
+
 :root{
     --bg: rgb(238, 234, 234);
 }

@@ -2,6 +2,13 @@
     flex: .6;
 }
 
+
+@media(max-width: 950px){
+    .posts{
+        flex: .7;
+    }
+}
+
 .posts :root{
     --bg: rgb(208, 225, 233);
 }
@@ -85,3 +92,16 @@
     display: flex;
     align-items: center;
 }
+
+
+@media(max-width: 400px){
+    .posts .choose{
+        gap: 0;
+        font-size: .8rem;
+    }
+
+    .post-icon{
+        height: 20px !important;
+        width: 20px !important;
+    }
+ }

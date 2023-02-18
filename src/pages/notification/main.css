@@ -6,6 +6,12 @@
     padding: 20px;
 }
 
+@media(max-width: 950px){
+    .mainBox{
+     flex: .7;
+    }
+ }
+
 .mainBox .box{
     display: flex;
     justify-content: space-between;

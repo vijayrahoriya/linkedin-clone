@@ -17,19 +17,19 @@ function Posts() {
         </header>
         <div className="icons">
             <div className='choose'>
-                <GalleryIcon style={{color:'skyblue'}}/>
+                <GalleryIcon className='post-icon' style={{color:'skyblue'}}/>
                 Photo
             </div>
             <div className='choose'>
-                <VideoIcon style={{color:'green'}}/>
+                <VideoIcon className='post-icon' style={{color:'green'}}/>
                 Video
             </div>
             <div className='choose'>
-                <CalendarIcon style={{color:'orange'}}/>
+                <CalendarIcon className='post-icon' style={{color:'orange'}}/>
                 Event
             </div>
             <div className='choose'>
-                <ArticlIcon style={{color:'orangered'}}/>
+                <ArticlIcon className='post-icon' style={{color:'orangered'}}/>
                 Write articles
             </div>
         </div>

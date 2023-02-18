@@ -115,3 +115,10 @@
 .mainpage .row button:hover{
     background: skyblue;
 }
+
+
+@media(max-width: 950px){
+    .mainpage .row .box{
+        width: 45%;
+    }
+}
