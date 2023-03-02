@@ -65,7 +65,7 @@ function Header() {
           </li>
           <li className="options-list" onClick={popupLinks}>
             <HoriIcon />
-            <ul className={`profile-box ${menuLink ? 'active' : ''}`}>
+            <ul  id='option' className={`profile-box ${menuLink ? 'active' : ''}`}>
               <li style={{ cursor: 'pointer' }} onClick={popupProfile} className='dropdown'>
                 <UserImage />
                 <span>Me <DropdownIcon /></span>
@@ -87,8 +87,8 @@ function Header() {
           </li>
           <li className='lastLink' style={{ textDecoration: 'underline', color: '#000' }}><Link to={"/"}>Try Premium form<br></br> free</Link></li>
         </ul>
-        <div className={`profile-box ${profile ? 'active' : ''}`}></div>
-        <div className={`profile-box ${profile ? 'active' : ''}`}>
+        {/* <div className={`profile-box ${profile ? 'active' : ''}`}></div> */}
+        <div id='profile' className={`profile-box ${profile ? 'active' : ''}`}>
           <Link to={'/profile'}>
             <div className="top" onClick={popupProfile}>
               <div className="image">

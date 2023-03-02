@@ -25,6 +25,18 @@ body{
     pointer-events: none;
 }
 
+@media(max-width: 450px){
+    .profile-box{
+        right: 15%;
+    }
+}
+
+@media(max-width: 368px){
+    .profile-box{
+        right: 3%;
+    }
+}
+
 .profile-box.active{
     opacity: 1;
     pointer-events: auto;
@@ -148,6 +160,10 @@ body{
     width: 20px !important;
     height: 20px !important;
     color: #333;
+}
+
+.header-links{
+    position: relative;
 }
 
 .header-links ul{

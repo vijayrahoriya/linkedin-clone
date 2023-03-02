@@ -122,3 +122,10 @@
         width: 45%;
     }
 }
+
+
+@media(max-width: 450px){
+    .mainpage .row .box{
+        width: 100%;
+    }
+ }

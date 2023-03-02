@@ -280,11 +280,13 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .intrests .line .left{
     display: flex;
     gap:10px;
+    margin-bottom: 10px;
 }
 
 .intrests .line .content{
@@ -385,4 +387,23 @@
 .mainProfile .question span{
     font-size: .8rem;
     color: #777;
+}
+
+
+@media(max-width: 768px){
+    .mainProfile .footer .line{
+        flex-wrap: wrap;
+    }
+    .mainProfile .footer .first{
+        width: 34%;
+    }
+    .mainProfile .footer .first:last-child{
+        width: 34%;
+    }
+}
+
+@media(max-width: 600px){
+    .mainProfile .footer{
+        padding: 0 10px;
+    }
 }
