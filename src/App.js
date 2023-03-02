@@ -7,7 +7,7 @@ import RightSidebar from './components/rightbar/RightSidebar';
 import Jobs from './pages/jobs/Jobs';
 import Network from './pages/network/Network';
 import Notification from './pages/notification/Notification';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Profile from './pages/profile/Profile';
 
 function App() {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import LinkedinIcon from '@mui/icons-material/LinkedIn'
 import SearchIcon from '@mui/icons-material/Search'
 import HomeIcon from '@mui/icons-material/Home'
@@ -11,11 +11,12 @@ import UserImage from '@mui/icons-material/AccountCircle'
 import DropdownIcon from '@mui/icons-material/ArrowDropDown'
 import HoriIcon from '@mui/icons-material/MoreHoriz'
 import './header.css'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import userPhoto from '../../assests/user.avif'
 
 function Header() {
   let location = useLocation();
+  const navigate = useNavigate();
   let loc = location.pathname
   const [profile, setProfile] = useState(false)
   let arr = loc.split('/')
@@ -23,6 +24,11 @@ function Header() {
   path = path.join().slice(0, 1).toLocaleUpperCase() + path.join().slice(1)
   document.title = path + " | Linkedin Clone"
   const [menuLink, setMenuLinks] = useState(false)
+
+  useEffect(()=>{
+    location.pathname = '/'
+    navigate(location.pathname)
+  },[])
 
   const popupProfile = () => {
     setProfile(!profile)
